@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>Diabetes Prediction</h1>
+      <form action="{{ url_for('predict') }}" method="post">
+         <label>Pregnancies</label>
+         <input type="text" name="Pregnancies:" required>
+         <br>  
+      </br>
+         <br>
+         <label>Glucose</label>
+         <input type="text" name="Glucose" required>
+         <br>  
+      </br>
+         <br>
+         <label>BloodPressure</label>
+         <input type="text" name="BloodPressure" required>
+         <br>  
+      </br>
+         <br>
+         <label>SkinThickness</label>
+         <input type="text" name="SkinThickness" required>
+         <br>  
+      </br>
+         <br>
+         <label>Insulin</label>
+         <input type="text" name="Insulin" required>
+         <br>  
+      </br>
+         <br>
+         <label>BMI</label>
+         <input type="text" name="BMI" required>
+         <br>  
+      </br>
+         <br>
+         <label>DiabetesPedigreeFunction</label>
+         <input type="text" name="DiabetesPedigreeFunction" required>
+         <br>  
+      </br>
+         <br>
+         <label>Age</label>
+         <input type="text" name="Age" required>
+         <br>  
+      </br>
+         <br>
+         <button type="submit">Predict</button>
+         <br>  
+      </br>
+      </form>
+      
+      <h2>{{ prediction_text }}</h2>
+      
+   </body>
+</html>
